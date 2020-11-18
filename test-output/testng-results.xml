@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13802" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13802" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:43Z">
+      <class name="com.test.tests.SearchTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="init" is-config="true" duration-ms="375" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="initTest" is-config="true" duration-ms="130" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="PASS" signature="searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="searchFor" duration-ms="12738" started-at="2020-11-18T17:17:29Z" data-provider="getData" finished-at="2020-11-18T17:17:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PriceMax=₹10000, SearchText=Samsung Mobiles, Processor=Snapdragon, TestCaseID=1.0, TestCaseName=Search for mobile phones, RAM=2 GB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFor -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="afterMethod" is-config="true" duration-ms="527" started-at="2020-11-18T17:17:42Z" finished-at="2020-11-18T17:17:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchFor status=SUCCESS method=SearchTest.searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@4f7d0008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.test.tests.SearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
