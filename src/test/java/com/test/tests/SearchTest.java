@@ -1,21 +1,12 @@
 package com.test.tests;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 
-import org.json.JSONObject;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import com.aventstack.extentreports.Status;
 import com.test.base.BaseTest;
 
@@ -60,16 +51,16 @@ public class SearchTest extends BaseTest {
 		test.log(Status.INFO, "Selecting Processor name "+data.get("Processor"));
 		selectCheckBox("processorNames_xpath", data.get("Processor").toString());
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='_4rR01T']")));
-		List<WebElement> product_names = driver.findElements(By.xpath("//div[@class='_4rR01T']"));
-		List<WebElement> product_price = driver.findElements(By.xpath("//div[@class='_25b18c']/div[1]"));
+		
+		List<WebElement> product_names = getAllElements("productNames_xpath");
+		List<WebElement> product_price = getAllElements("productPprices_xpath");
 		// sa.assertAll();
 		
 		
 		for(int i=0;i<product_names.size();i++) {
-			pname = product_names.get(i).getText();//Iterate and fetch product name
-			pprice = product_price.get(i).getText();//Iterate and fetch product price
-			pprice = pprice.replaceAll("[^0-9]", "");//Replace anything wil space other than numbers
+			pname = product_names.get(i).getText();
+			pprice = product_price.get(i).getText();
+			pprice = pprice.replaceAll("[^0-9]", "");
 			
 			ProductList.put(pname,pprice);//Add product and price in HashMap
 			
@@ -78,8 +69,7 @@ public class SearchTest extends BaseTest {
 		test.log(Status.INFO, "Writing test data to Json file " +ProductList.toString());
 		createJsonFile("Samsung Phones", ProductList);
 		
-		
-		//System.out.println(ProductList.get("Samsung Galaxy J2 2018 (Black, 16 GB)"));
+				//System.out.println(ProductList.get("Samsung Galaxy J2 2018 (Black, 16 GB)"));
 		test.log(Status.INFO, "End of test : " + testName);
 		
 	}

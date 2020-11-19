@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13802" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:43Z">
+  <suite name="Default suite" duration-ms="16244" started-at="2020-11-19T05:30:12Z" finished-at="2020-11-19T05:30:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13802" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:43Z">
+    <test name="Default test" duration-ms="16244" started-at="2020-11-19T05:30:12Z" finished-at="2020-11-19T05:30:28Z">
       <class name="com.test.tests.SearchTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="init" is-config="true" duration-ms="375" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:29Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.test.tests.SearchTest@589838eb]" name="init" is-config="true" duration-ms="474" started-at="2020-11-19T05:30:12Z" finished-at="2020-11-19T05:30:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initTest()[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="initTest" is-config="true" duration-ms="130" started-at="2020-11-18T17:17:29Z" finished-at="2020-11-18T17:17:29Z">
+        <test-method status="PASS" signature="initTest()[pri:0, instance:com.test.tests.SearchTest@589838eb]" name="initTest" is-config="true" duration-ms="141" started-at="2020-11-19T05:30:12Z" finished-at="2020-11-19T05:30:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method status="PASS" signature="searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="searchFor" duration-ms="12738" started-at="2020-11-18T17:17:29Z" data-provider="getData" finished-at="2020-11-18T17:17:42Z">
+        <test-method status="PASS" signature="searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@589838eb]" name="searchFor" duration-ms="13323" started-at="2020-11-19T05:30:12Z" data-provider="getData" finished-at="2020-11-19T05:30:26Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFor -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.tests.SearchTest@4f7d0008]" name="afterMethod" is-config="true" duration-ms="527" started-at="2020-11-18T17:17:42Z" finished-at="2020-11-18T17:17:43Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.tests.SearchTest@589838eb]" name="afterMethod" is-config="true" duration-ms="2282" started-at="2020-11-19T05:30:26Z" finished-at="2020-11-19T05:30:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchFor status=SUCCESS method=SearchTest.searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@4f7d0008] output={null}]]]>
+                <![CDATA[[TestResult name=searchFor status=SUCCESS method=SearchTest.searchFor(java.util.Hashtable)[pri:0, instance:com.test.tests.SearchTest@589838eb] output={null}]]]>
               </value>
             </param>
           </params>
