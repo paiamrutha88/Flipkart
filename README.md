@@ -1,4 +1,4 @@
-# Fliphkart
+# Flipkart
 Problem Statement :Launch Flipkart.com (No Login),Search for “samsung mobiles“,Apply Filter on price with range “Min” to “10000” ,RAM as 2GB,PROCESSOR BRAND as Snapdragon
 store the listed Phone Name and respective Current Price in csv/Json file.
 
