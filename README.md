@@ -6,6 +6,6 @@ Solution :
 - Framework created in standard Maven format
 - Input data is read from excel sheet
 - Output is stored in Json file
-- Extent report generated at the end og execution
+- Extent report generated at the end of execution
 - Tests can be run directly using testNG file RegressionSuite.xml. They can also be run through command prompt using Maven Surefire plugin
 
